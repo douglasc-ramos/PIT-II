@@ -1,0 +1,187 @@
+/* PROJETO INTEGRADOR EM ENGENHARIA DE SOFTWARE II
+   Nome: Douglas Coutinho Ramos
+   Instituição: Universidade Positivo
+   RGM: 28860179
+   Semestre: 7º / 2024 */
+
+/* Estilos gerais */
+body {
+    background-color: #f5f5dc; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #6f4e37; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin: 0;
+}
+
+/* Menu */
+#menu {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grade de produtos */
+.product-grid {
+    display: grid; /* Define como grade */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de tamanhos iguais */
+    grid-gap: 20px; /* Espaçamento entre itens */
+    justify-items: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+}
+
+.product {
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda dos itens */
+    border-radius: 5px; /* Borda arredondada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o conteúdo interno */
+    width: 100%;
+    max-width: 250px; /* Largura máxima */
+    min-height: 300px; /* Altura mínima */
+}
+
+.product-image {
+    width: 200px; /* Largura das imagens */
+    height: 150px; /* Altura das imagens */
+    object-fit: cover; /* Ajusta a imagem ao contêiner */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Botões */
+button {
+    background-color: #6f4e37; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer; /* Aponta como clicável */
+}
+
+/* Lista de itens no carrinho */
+#cart-items {
+    padding: 20px;
+    text-align: center;
+}
+
+#cart-list {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0;
+    max-width: 600px; /* Largura máxima da lista */
+    margin: 0 auto; /* Centraliza a lista */
+}
+
+#cart-list li {
+    margin: 10px 0;
+    padding: 15px; /* Espaçamento interno dos itens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Ajusta o layout interno */
+    align-items: center;
+}
+
+#cart-list li .item-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#cart-list button {
+    background-color: #d9534f; /* Cor do botão de remoção */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px; /* Borda arredondada */
+}
+
+#clear-cart {
+    background-color: #d9534f; /* Cor do botão de limpar carrinho */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Seleção de país e bandeira */
+.country-selector-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flag {
+    width: 50px; /* Largura da bandeira */
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Campos e botões */
+select, input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Alinhamento do título */
+h1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Seção da calculadora */
+.country-selector-container, 
+#processingDays, 
+button {
+    display: block; /* Elementos em blocos separados */
+    margin: 10px auto; /* Centraliza e adiciona espaçamento */
+    text-align: center;
+}
+
+/* Resultado da calculadora */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Alinhamento do parágrafo */
+p {
+    margin: 10px auto;
+    text-align: center;
+    width: 90%;
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Parágrafo específico da calculadora */
+.country-selector-container p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

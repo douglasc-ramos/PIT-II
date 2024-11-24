@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafeteria</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Cafeteria</h1>
+        <!-- Carrinho de Compras no Header -->
+        <div class="cart-icon">
+            <a href="cart.html">🛒 Carrinho (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Nosso Cardápio</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/espresso.jpg" alt="Espresso" class="product-image">
+                    <h3>Espresso</h3>
+                    <p>Espresso rico e cremoso.</p>
+                    <button onclick="addToCart('Espresso')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino" class="product-image">
+                    <h3>Cappuccino</h3>
+                    <p>Cappuccino suave e espumoso.</p>
+                    <button onclick="addToCart('Cappuccino')">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="images/Croissant.jpg" alt="Croissant" class="product-image">
+                    <h3>Croissant</h3>
+                    <p>Croissant amanteigado e crocante.</p>
+                    <button onclick="addToCart('Croissant')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <h1>Calculadora de Data de Entrega</h1>
+
+        <!-- Container para o seletor de país e a bandeira -->
+        <div class="country-selector-container">
+            <p>Selecione o seu país:</p>
+            <select id="countrySelector" onchange="updateCountry()">
+                <option value="" selected disabled>Selecione um país</option>
+                <option value="USA">EUA</option>
+                <option value="Brazil">Brasil</option>
+                <option value="UK">Reino Unido</option>
+                <option value="Canada">Canadá</option>
+                <option value="Australia">Austrália</option>
+            </select>
+            <!-- Exibição da bandeira ao lado do seletor -->
+            <img id="flagImage" class="flag" src="" alt="Bandeira" style="display: none;">
+        </div>
+    
+        <p>Informe o tempo de processamento (em dias) negociado no momento da compra:</p>
+        <input type="number" id="processingDays" placeholder="Dias de processamento">
+        <button onclick="calculateDeliveryDate()">Calcular Data de Entrega</button>
+
+        <h2 id="result"></h2>
+        
+        <footer>
+            &copy; 2024 Cafeteria - Por DG
+        </footer>
+    </main>
+        
+    <script src="app.js"></script>
+</body>
+</html>

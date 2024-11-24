@@ -1,0 +1,49 @@
+PROJETO INTEGRADOR EM ENGENHARIA DE SOFTWARE II
+Nome: Douglas Coutinho Ramos
+Instituição: Universidade Positivo
+RGM: 28860179
+Semestre: 7º / 2024
+
+# Relatórios de Testes para o Projeto Cafeteria
+
+## Testes do Front-End
+
+### Teste 1: Clique no Botão (Adicionar ao Carrinho)
+**Objetivo**: Verificar se o clique no botão dos produtos exibe a mensagem "Item adicionado ao carrinho".
+- **Passos**:
+    1. Abri o arquivo `index.html` em um navegador.
+    2. Cliquei no botão "Adicionar ao Carrinho" de qualquer produto.
+- **Resultado Esperado**: Um alerta no navegador deve aparecer com a mensagem "Item adicionado ao carrinho".
+- **Resultado**: Aprovado. O alerta aparece conforme esperado.
+
+### Teste 2: Exibição dos Produtos
+**Objetivo**: Garantir que todas as informações dos cafés e produtos sejam exibidas corretamente no menu.
+- **Passos**:
+    1. Abri o arquivo `index.html` em um navegador.
+    2. Verifiquei se os itens (ex.: Espresso, Cappuccino) estão listados com seus nomes, descrições e preços.
+- **Resultado Esperado**: Os produtos devem ser exibidos corretamente com seus detalhes.
+- **Resultado**: Aprovado. Todos os produtos e suas descrições aparecem corretamente na página.
+
+
+## Testes do Back-End
+
+### Teste 1: Teste de Resposta do Servidor
+**Objetivo**: Verificar se o servidor está em execução e retorna a resposta correta.
+- **Passos**:
+    1. Executei o arquivo `server.js` usando Node.js.
+    2. Acessei `http://localhost:5500` -  `http://127.0.0.1:5500/index.html` em um navegador utilizando 
+        a ferramenta do VS Code: Live Server .
+- **Resultado Esperado**: O servidor deve responder com a mensagem "Bem-vindo ao Backend da Cafeteria!".
+- **Resultado**: Aprovado. O servidor respondeu com a mensagem esperada.
+
+### Teste 2: Teste de Recuperação de Dados de Produtos
+**Objetivo**: Verificar se os dados dos produtos são recuperados corretamente do banco de dados.
+- **Passos**:
+    1. Executei o arquivo `server.js` para iniciar o servidor.
+    2. Fiz uma requisição GET para o endpoint `/products`.
+- **Resultado Esperado**: O servidor deve retornar uma lista de produtos do banco de dados.
+- **Resultado**: Aprovado. A lista de produtos foi retornada corretamente pelo banco de dados.
+
+## Conclusão
+Todos os testes foram aprovados com sucesso. O front-end e o back-end estão funcionando conforme o esperado, 
+e a aplicação está pronta para o desenvolvimento adicional ou implantação.
